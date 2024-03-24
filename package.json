@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-select": "^5.8.0",
-    "socket.io-client": "^4.7.2"
+    "socket.io-client": "^4.7.2",
+    "vinted-api": "^2.9.1",
+    "vinted-moniteur": "^1.0.6",
+    "window": "^4.2.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -26,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.31",
+    "rollup-plugin-node-builtins": "^2.1.2",
     "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
   }
