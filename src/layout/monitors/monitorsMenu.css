@@ -1,4 +1,13 @@
 .monitors-menu {
   margin-top: 3.5rem;
+  height: 100%;
+}
+
+.monitors-menu__list {
+  padding-top: 10px;
+  height: calc(100% - 170px);
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

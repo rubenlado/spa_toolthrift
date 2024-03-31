@@ -27,6 +27,8 @@ const App = () => {
     if (!selectedBrand?.id) {
       return;
     }
+    console.log("socket emit", selectedBrand?.id);
+
     socket.emit("get products", { brand: selectedBrand.id });
   }, [selectedBrand?.id]);
 
@@ -57,7 +59,7 @@ const App = () => {
       >
         <NewMonitorForm />
       </Modal>
-      <div className="flex w-full h-full p-7 verflow-hidden">
+      <div className="flex w-full h-full p-7 overflow-hidden">
         <MonitorsMenu
           setSelectedBrand={setSelectedBrand}
           setNewMonitorModalVisible={setNewMonitorModalVisible}
